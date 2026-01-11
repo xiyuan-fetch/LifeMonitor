@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紧急联系人管理"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="姓名"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88FFFFFF"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="电话"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88FFFFFF"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etCustomSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="自定义短信内容"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88FFFFFF"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnAddContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2ECC71"
+            android:minHeight="48dp"
+            android:text="确认添加" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvContacts"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="#1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tvSmsPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#26FFFFFF"
+            android:padding="12dp"
+            android:textColor="#BBFFFFFF"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnTestSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#E67E22"
+            android:minHeight="48dp"
+            android:text="发送测试短信" />
+
+        <SeekBar
+            android:id="@+id/sbBlur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:max="50"
+            android:minHeight="48dp"
+            android:progress="20" />
+
+        <Button
+            android:id="@+id/btnPickBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#8E44AD"
+            android:minHeight="48dp"
+            android:text="选择背景壁纸" />
+
+        <Button
+            android:id="@+id/btnSaveAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#2ECC71"
+            android:minHeight="48dp"
+            android:text="保存所有并返回" />
+
+    </LinearLayout>
+</ScrollView>
